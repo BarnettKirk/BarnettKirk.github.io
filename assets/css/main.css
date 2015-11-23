@@ -2030,6 +2030,7 @@
 				width: 100%;
 			}
 
+
 /* List */
 
 	ol {
@@ -2417,6 +2418,7 @@
 		border-top: solid 3px #f4f4f4;
 		margin-bottom: 2.25em;
 		padding-top: 2.25em;
+		position: relative;
 	}
 
 		.features article:first-child {
@@ -2438,10 +2440,16 @@
 
 		.features article .inner {
 			display: inline-block;
-			vertical-align: middle;
-			width: 50%;
+			position: absolute;
+			
 		}
-
+    .features article .innerpic {
+      position: absolute;
+			width: 50%;
+			top: 20%;
+			left: 50%;
+			transform: translate(0%, 0%);
+    }
 			.features article .inner > :last-child {
 				margin-bottom: 0;
 			}
@@ -3063,27 +3071,33 @@
 	}
 	
 	#thumbwrap {
-	margin:75px auto;
+	margin:0px;
 	width:252px; height:252px;
 }
 .thumb {
 	float:left; /* must be floated for same cross browser position of larger image */
 	position:relative;
 	margin:3px;
+	
 }
-.thumb img { 
-	border:1px solid #000;
-	vertical-align:bottom;
+.thumb img {
+  left: 0;
+	top: 0;
+	border:5px solid #f0f0f0;
+
 }
 .thumb:hover {
 	border:0; /* IE6 needs this to show large image */
 	z-index:1;
+	
 }
 .thumb span { 
 	position:absolute;
 	visibility:hidden;
+	
 }
 .thumb:hover span { 
 	visibility:visible;
-	top:37px; left:37px; 
+	top:37px; left:0px; 
+	
 }
