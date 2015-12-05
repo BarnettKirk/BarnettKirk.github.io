@@ -48,6 +48,9 @@
 		-webkit-text-size-adjust: none;
 	}
 
+  caption {
+    font-size: 30%;
+  } 
 /* Box Model */
 
 	*, *:before, *:after {
@@ -3070,7 +3073,7 @@
 
 	}
 	
-	#thumbwrap {
+	#thumbwrapL {
 	margin:0px;
 	width:252px; height:252px;
 }
@@ -3101,3 +3104,45 @@
 	top:37px; left:0px; 
 	
 }
+#thumbwrapR {
+	margin:0px;
+	width:252px; height:252px;
+}
+.thumb {
+	float:right; /* must be floated for same cross browser position of larger image */
+	position:relative;
+	margin:3px;
+	
+}
+.thumb img {
+  left: 0;
+	top: 0;
+	border:5px solid #f0f0f0;
+
+}
+.thumb:hover {
+	border:0; /* IE6 needs this to show large image */
+	z-index:1;
+	
+}
+.thumb span { 
+	position:absolute;
+	visibility:hidden;
+	
+}
+.thumb:hover span { 
+	visibility:visible;
+	top:37px; left:0px; 
+	
+}
+
+.floatright { float: right; }
+.floatleft { float: left; }
+.thumbnail
+{
+float: left;
+width: 60px;
+border:5px solid #f0f0f0;
+margin: 0 15px 15px 0;
+}
+.clearboth { clear: both; }
