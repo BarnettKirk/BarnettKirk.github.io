@@ -83,22 +83,25 @@
 									  <h4>Several species of leaftiers on <em style="italic">Quercus</em> species in Missouri, USA</h4>
 												<p>Leaftying micro-lepidopterans are an important ecosystem engineer in herbivore/detritevore relationships that are common on temperate decidious trees. They have been shown to increase the abundance of certain species/guilds of insects that would not be there if not for the leaftie. <a href="http://prezi.com/gwqeirt3snqa/?utm_campaign=share&utm_medium=copy&rc=ex0share" target="_blank">My master's presentation.</a></p>
 												<img src="images/appendix fig.png" alt="" style="width:100%;height:100%;">
+										
 										<article>
-										      
-                          <img src="images/dmgleaftier.png" alt="" style="width:100%;height:50%;">
-												  
-												    <caption>Photo taken by R.J. Marquis</caption><br>
-												  
-												  <img class="thumbnail" src="images/leafties.png" alt="" style="width:45%;height:45%;">
-												  
-												  <img class="thumbnail" src="images/Parasite_126.png" alt="" style="width:50%;height:50%;">
-												  <span>
-									<img class="thumbnail" src="images/images/Parasite_126.png" alt="" style="width:350%;height:350%;">
-												  </span>
-												
-												  <br class="clearboth">
+                      	  <div id="container">
+                            	<ul>
+                            	<li><img src="images/dmgleaftier.png" width="604" height="453" />
+                            	<figcaption>Photo taken by R.J. Marquis</figcaption></li>
+                            	<li><img src="images/leafties.png" width="604" height="300" /></li>
+                            	<li><img src="images/Parasite_126.png" width="604" height="453" /></li>
+                            	<li><img src="images/Psocid01.jpg" width="604" height="453" /></li>
+                            	<li><img src="images/hemiptera_eggs.jpg" width="604" height="453" /></li>
+                            	<li><img src="images/lep_eggs.jpg" width="604" height="453" /></li>
+                            	<li><img src="images/cat_parasitized.jpg" width="604" height="453" /></li>
+                            	<li><img src="images/parasitoid.jpg" width="604" height="453" /></li>
+                            	<li><img src="images/survivaltotal.png" width="604" height="453" /></li>
+                            	</ul>
+                            	<span class="button prevButton"></span>
+                            	<span class="button nextButton"></span>
+                          </div>	 
 										</article>
-										<br>
 										<article>
 											<div id="thumbwrapL" >
                         <a class="thumb" href="#">
@@ -114,18 +117,6 @@
 										<article>
 											<div id="thumbwrapL" >
                         <a class="thumb" href="#">
-                          <img src="images/survivaltotal.png" alt="" style="width:150%;height:150%;">
-                        <span><img src="images/survivaltotal.png" alt="" style="width:350%;height:350%;"></span></a>
-												</div>
-											<div class="innerpic">
-												<h4>Leaftiers on various <em style="italic">Quercus</em> species in Missouri, USA</h4>
-												<p>The survival of two species of leaftiers on various oak species.</p>
-											</div>
-										</article>
-										
-										<article>
-											<div id="thumbwrapL" >
-                        <a class="thumb" href="#">
                           <img src="images/beetle07.jpg" alt="" style="width:150%;height:150%;">
                         <span><img src="images/beetle07.jpg" alt="" style="width:350%;height:350%;"></span></a>
 												</div>
@@ -135,20 +126,7 @@
 											</div>
 										</article>
 										
-										<article>
-											<div id="thumbwrapL" >
-                        <a class="thumb" href="#">
-                          <img src="images/Psocid01.jpg" alt="" style="width:150%;height:150%;">
-                        <span><img src="images/Psocid01.jpg" alt="" style="width:350%;height:350%;"></span></a>
-												</div>
-											<div class="innerpic">
-												<h4>Hey its a psocid</h4>
-												<p>This is a picure of a psocid I took from a leaftie on an oak in Missouri.</p>
-											</div>
-										</article>
-										
-									</div>
-								</div>
+										</div>
 							</section>
 
 						<!-- Four -->
@@ -528,6 +506,93 @@
 			<script src="assets/js/util.js"></script>
 			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
 			<script src="assets/js/main.js"></script>
+          
+          <!-- SLIDESHOW JS-->
+          <script src="jquery-1.4.2.min.js"></script>
+            <script>
+            $(window).load(function(){
+            		var pages = $('#container li'), current=0;
+            		var currentPage,nextPage;
+            		var timeoutID;
+            		var buttonClicked=0;
+            
+            		var handler1=function(){
+            			buttonClicked=1;
+            			$('#container .button').unbind('click');
+            			currentPage= pages.eq(current);
+            			if($(this).hasClass('prevButton'))
+            			{
+            				if (current <= 0)
+            					current=pages.length-1;
+            				else
+            					current=current-1;
+            				nextPage = pages.eq(current);	
+            
+            				nextPage.css("marginLeft",-604);
+            				nextPage.show();
+            				nextPage.animate({ marginLeft: 0 }, 800,function(){
+            					currentPage.hide();
+            				});
+            				currentPage.animate({ marginLeft: 604 }, 800,function(){
+            					$('#container .button').bind('click',handler1);
+            				});
+            			}
+            			else
+            			{
+            
+            				if (current >= pages.length-1)
+            					current=0;
+            				else
+            					current=current+1;
+            				nextPage = pages.eq(current);	
+            
+            				nextPage.css("marginLeft",604);
+            				nextPage.show();
+            				nextPage.animate({ marginLeft: 0 }, 800,function(){
+            				});
+            				currentPage.animate({ marginLeft: -604 }, 800,function(){
+            					currentPage.hide();
+            					$('#container .button').bind('click',handler1);
+            				});
+            			}		
+            		}
+            
+            		var handler2=function(){
+            			if (buttonClicked==0)
+            			{
+            			$('#container .button').unbind('click');
+            			currentPage= pages.eq(current);
+            			if (current >= pages.length-1)
+            				current=0;
+            			else
+            				current=current+1;
+            			nextPage = pages.eq(current);	
+            			nextPage.css("marginLeft",604);
+            			nextPage.show();
+            			nextPage.animate({ marginLeft: 0 }, 800,function(){
+            			});
+            			currentPage.animate({ marginLeft: -604 }, 800,function(){
+            				currentPage.hide();
+            				$('#container .button').bind('click',handler1);
+            			});
+            			timeoutID=setTimeout(function(){
+            				handler2();	
+            			}, 4000);
+            			}
+            		}
+            
+            		$('#container .button').click(function(){
+            			clearTimeout(timeoutID);
+            			handler1();
+            		});
+            
+            		timeoutID=setTimeout(function(){
+            			handler2();	
+            			}, 4000);
+            		
+            });
+            
+            </script>
 
 	</body>
 </html>
