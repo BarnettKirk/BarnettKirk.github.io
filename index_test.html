@@ -1,0 +1,556 @@
+<!DOCTYPE HTML>
+<!--
+	Read Only by HTML5 UP
+	html5up.net | @n33co
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Kirk Barnett's website</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+		
+<script type="text/javascript">
+
+// Swap Image with Fade Effect
+function swapImage(id, path)
+{
+    //Swap Images with Filter
+    var el = document.getElementById(id);
+    el.count = el.count || 0;
+
+    document.getElementById(id).style.filter="blendTrans(duration=3)"
+    if (document.getElementById(id).filters && document.getElementById(id).filters[0])
+    {
+        document.getElementById(id).filters.blendTrans.Apply()
+        document.getElementById(id).filters.blendTrans.Play()
+        document.getElementById(id).src = path[el.count];
+
+        el.count = (el.count + 1) &#37; path.length;
+    }
+}
+
+// Allows for Multiple Slides
+function slideshow()
+{
+    setInterval(function ()
+    {
+        swapImage('slide1', [
+            "images/meURS2008.jpg",
+            "images/meURDC.jpg",
+            "images/HS_project_plate.jpg",
+            "images/trackplate_zoom.png",
+            "images/month_all.png",
+            "images/month_by_treat.png",
+            "images/Activity_all.png"
+        ]);
+    }, 5200);
+
+    setInterval(function ()
+    {
+        swapImage('slide2', [
+            "images/dmgleaftier.png",
+            "images/leafties.png",
+            "images/experiment_tree.png",
+            "images/food_containers.jpg",
+            "images/Psocid01.jpg",
+            "images/hemiptera_eggs.jpg",
+            "images/lep_eggs.jpg",
+            "images/LadyBeetleLarva.jpg",
+            "images/Parasite_126.png",
+            "images/cat_parasitized.jpg",
+            "images/parasitoid.jpg",
+            "images/survivaltotal.png",
+            "images/survivaltreat.png"
+            
+        ]);
+    }, 3900);
+}
+</script>
+	</head>
+	<body onload="slideshow()">
+
+		<!-- Header -->
+			<section id="header">
+				<header>
+					<span class="image avatar"><img src="images/MexicanMe.jpg" alt="" /></span>
+					<h1 id="logo"><a href="#">Kirk Barnett</a></h1>
+					<p>I am a PhD student<br />
+					at Western Sydney University - Hawkesbury Institute for the Environment</p>
+				</header>
+				<nav id="nav">
+					<ul>
+						<li><a href="#one" class="active">About me</a></li>
+						<li><a href="#two">Current skills</a></li>
+						<li><a href="#three">Research interests</a></li>
+						<li><a href="#four">Contact</a></li>
+					</ul>
+				</nav>
+				<footer>
+					<ul class="icons">
+						<li><a href="https://twitter.com/barnettkirk1" class="icon fa-twitter" target="_blank"><span class="label">Twitter</span></a></li>
+						<li><a href="https://www.facebook.com/pages/Coleoptera/130959736976072" class="icon fa-facebook" target="_blank"><span class="label">Facebook</span></a></li>
+						<li><a href="https://github.com/BarnettKirk" class="icon fa-github" target="_blank"><span class="label">Github</span></a></li>
+						<li><a href="#four" class="icon fa-envelope"><span class="label">Email</span></a></li>
+						<li><a href="https://www.researchgate.net/profile/Kirk_Barnett" class="icon fa-bar-chart" target="_blank"><span class="label">ResearchGate</span></a></li>
+					</ul>
+				</footer>
+			</section>
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- One -->
+							<section id="one">
+								<div class="container">
+									<header class="major">
+										<h2>Ecological research</h2>
+										<p>Study of the natural world.</p>
+									</header>
+									<p>I am currently a researcher in the ecological sciences which relates to climate change. In particular, I am in the process of elucidating the interactions of belowground herbivores and grassland plant species in the face of altered rainfall regimes.</p>
+								</div>
+							</section>
+
+						<!-- Two -->
+							<section id="two">
+								<div class="container">
+									<h3>Current skills</h3>
+									<p>I have developed many research skills while studying ecology.</p>
+									<ul class="feature-icons">
+										<li class="fa-code">I am proficient in data analysis in R and rudimentary knowledge of  python</li>
+										<li class="fa-cubes">Experimental design and fundamental data analysis</li>
+										<li class="fa-book">Follow through with research and publication</li>
+										<li class="fa-bolt">Theoretical philosopher on insect herbivory</li>
+										<li class="fa-users">Collaboration</li>
+									</ul>
+								</div>
+							</section>
+
+						<!-- Three -->
+							<section id="three">
+								<div class="container">
+									<h3>Previous and current research projects</h3>
+									<p>Plus some photos I have taken while researching plant-animal interactions.</p>
+									<div class="features">
+									  <h4>Undergraduate honors thesis: Amur Honeysuckle (<em style="italic">Lonicera maackii</em>) Affects Rodent Foraging Activity in a Midwestern Forest (2007-2008)</h4>
+												<p>Often invasive plant species alter
+vegetative cover and modify a rodent’s sense of predation risk. Thus invasive plants have the
+potential to change a rodent's foraging behavior. <em style="italic">Lonicera maackii</em> is an aggressive and highly invasive plant that is the dominant shrub in many U.S. forested areas; in some cases the invasion changes the natural patchy understory into a massive and very dense, nearly continuous vegetation. In this study I tested the hypothesis that the invasive plant <em style="italic">L. maackii</em> affects the activity of <em style="italic">Peromyscus leucopus</em> (the white-footed mouse) by providing cover from predators and food (in the form of seeds). <em style="italic">L. maackii</em> cover and fruit availability were manipulated in a
+factorial design. The removal of <em style="italic">L. maackii</em> cover reduced rodent activity by 28% while fruit and seed availability had no effect on activity. This result agrees with the prediction that this invasive species alters rodent activity by providing cover, but not by providing food. <a href="https://www.researchgate.net/publication/49743187_Invasive_plant_species_alters_consumer_behavior_by_providing_refuge_from_predation" target="_blank">Check out the final article in <em style="italic">Oecologia</em></a></p>
+<img src="images/HS_design.png" alt="" style="width:50%;height:50%;margin-left: 25%">
+                  </div>
+<br/>
+                    <article>
+                      	  <div id="container">
+                            	<ul>
+                      <img name="slide1" alt="" id="slide1" width="604" height="453" src="images/meURS2008.jpg" />
+                      <img name="slide1" alt="" id="slide1" width="604" height="453" src="images/meURDC.jpg" />
+                            	</ul>
+                          </div>	 
+										</article>
+										</br>
+										<hr></hr>
+								<div class="features">
+  									  <h4>Masters thesis: The ‘slow-growth-high-mortality’ hypothesis: how plant species, leaf quality, and the third trophic level contribute to the mortality of two common leaf-tying microlepidopteran herbivores (2009-2011)</h4>
+  												<p>I tested the slow-growth-high-mortality hypothesis, which states that plants, as a defense, slow the growth of herbivores to increase their exposure to the third trophic level. To test the hypothesis, I manipulated exposure of two common leaf-tying microlepidopterans (<em style="italic">Psilocorsis quercicella</em> and <em style="italic">Pseudotelphusa quercinigracella</em>) to the third trophic level on four species of oaks (<em style="italic">Quercus alba, Q. velutina, Q. rubra, and Q. stellata</em>).  I found that plant traits differed among oak species and changed across the two generations of leaf-tiers. The two leaf-tier species experienced the first trophic level differently but were similarly affected by the third trophic level. Overall, mortality differed between generations, and leaf-tiers experienced much stronger bottom-up effects than top-down effects. Tree species identity resulted in differences in development time and pupal mass, however measured plant traits were not correlated with mortality, development time, or mass in <em style="italic">P. quercinigracella</em> and were inconsistent in <em style="italic">P. quercicella</em>. Additionally, the abundance of both leaf-tiers and predators, and pupal mass were highest on <em style="italic">Q. alba</em>, however this tree species had neither the highest or lowest leaf quality in terms of nitrogen availability. Overall the results from this study do not follow the predictions of the slow-growth-high-mortality hypothesis.</p>
+												<img src="images/appendix fig.png" alt="" style="width:100%;height:100%;">
+												<!--style="margin-top: 12%;" to move images up and down-->
+										<article><iframe src="https://www.slideshare.net/slideshow/embed_code/key/BQaNDn3puyaR1S" width="854" height="712" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%; margin-left:6%;" allowfullscreen> </iframe> <div style="margin-bottom:5px; margin-left:22%;"> <strong> <a href="https://www.slideshare.net/secret/BQaNDn3puyaR1S" title="The slow growth-high-mortality hypothesis" target="_blank">The slow growth-high-mortality hypothesis</a> </strong> from <strong><a href="http://www.slideshare.net/barnettkirk" target="_blank">barnettkirk</a></strong> </div></article>
+										<article>
+                      	  <div id="container">
+                            	<ul>
+                            	<img name="slide2" alt="" id="slide1" width="604" height="453" src="images/dmgleaftier.png" />
+                            	<img name="slide2" alt="" id="slide1" width="604" height="453" src="images/leafties.png" />
+                            	</ul>
+                          </div>	 
+										</article>
+									<article style="clear: both;">
+                      	  <div id="container">
+                      	    <h4>PhD project: Below- and aboveground interactions in Australian grassland under future climate rainfall scenarios (2013-present)</h4>
+                      	    
+                              <iframe width="453" height="604" src="http://www.youtube.com/embed/LUMqI0yDf4I" style="float:left; clear: both;padding-right: 30px; padding-bottom: 50px;"></iframe>
+                          
+                      	    <p>The interactions of most organisms are uncertain in the future under climate change; this is especially true for Australia, as most of the workable land is grassland. This type of ecosystem is highly responsive to rainfall changes and therefore would be expected to see massive shifts in communities in response. Additionally, a barely researchd topic that could be highly important in this ecosytem is the effect of belowground feeders, the majoriy of which in Australia are scarab beetle larva. How these two important forces will interact is the subject of my thesis.</p>
+                          </div>
+                        </article>
+									</div>
+								</div>
+							</section>
+
+						<!-- Four -->
+							<section id="four" style="clear: both;">
+								<div class="container">
+									<h3>Contact Me</h3>
+									<p>Drop me a line if you would like to talk about my research or if you are looking for help on an R or python, ecology related problem</p>
+									</p><p><a href="mailto:barnett.kirk@gmail.com.com" target="_top">barnett[dot]kirk[at]gmail.com</a></p>
+								</div>
+							</section>
+
+						<!-- Five -->
+						<!--
+							<section id="five">
+								<div class="container">
+									<h3>Elements</h3>
+
+									<section>
+										<h4>Text</h4>
+										<p>This is <b>bold</b> and this is <strong>strong</strong>. This is <i>italic</i> and this is <em>emphasized</em>.
+										This is <sup>superscript</sup> text and this is <sub>subscript</sub> text.
+										This is <u>underlined</u> and this is code: <code>for (;;) { ... }</code>. Finally, <a href="#">this is a link</a>.</p>
+										<hr />
+										<header>
+											<h4>Heading with a Subtitle</h4>
+											<p>Lorem ipsum dolor sit amet nullam id egestas urna aliquam</p>
+										</header>
+										<p>Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus ornare mi ut ante amet placerat aliquet. Volutpat eu sed ante lacinia sapien lorem accumsan varius montes viverra nibh in adipiscing blandit tempus accumsan.</p>
+										<header>
+											<h5>Heading with a Subtitle</h5>
+											<p>Lorem ipsum dolor sit amet nullam id egestas urna aliquam</p>
+										</header>
+										<p>Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus ornare mi ut ante amet placerat aliquet. Volutpat eu sed ante lacinia sapien lorem accumsan varius montes viverra nibh in adipiscing blandit tempus accumsan.</p>
+										<hr />
+										<h2>Heading Level 2</h2>
+										<h3>Heading Level 3</h3>
+										<h4>Heading Level 4</h4>
+										<h5>Heading Level 5</h5>
+										<h6>Heading Level 6</h6>
+										<hr />
+										<h5>Blockquote</h5>
+										<blockquote>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan faucibus. Vestibulum ante ipsum primis in faucibus lorem ipsum dolor sit amet nullam adipiscing eu felis.</blockquote>
+										<h5>Preformatted</h5>
+										<pre><code>i = 0;
+
+	while (!deck.isInOrder()) {
+	    print 'Iteration ' + i;
+	    deck.shuffle();
+	    i++;
+	}
+
+	print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
+									</section>
+
+									<section>
+										<h4>Lists</h4>
+										<div class="row">
+											<div class="6u 12u(xsmall)">
+												<h5>Unordered</h5>
+												<ul>
+													<li>Dolor pulvinar etiam magna etiam.</li>
+													<li>Sagittis adipiscing lorem eleifend.</li>
+													<li>Felis enim feugiat dolore viverra.</li>
+												</ul>
+												<h5>Alternate</h5>
+												<ul class="alt">
+													<li>Dolor pulvinar etiam magna etiam.</li>
+													<li>Sagittis adipiscing lorem eleifend.</li>
+													<li>Felis enim feugiat dolore viverra.</li>
+												</ul>
+											</div>
+											<div class="6u 12u(xsmall)">
+												<h5>Ordered</h5>
+												<ol>
+													<li>Dolor pulvinar etiam magna etiam.</li>
+													<li>Etiam vel felis at lorem sed viverra.</li>
+													<li>Felis enim feugiat dolore viverra.</li>
+													<li>Dolor pulvinar etiam magna etiam.</li>
+													<li>Etiam vel felis at lorem sed viverra.</li>
+													<li>Felis enim feugiat dolore viverra.</li>
+												</ol>
+												<h5>Icons</h5>
+												<ul class="icons">
+													<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+													<li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+													<li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+													<li><a href="#" class="icon fa-github"><span class="label">Github</span></a></li>
+													<li><a href="#" class="icon fa-dribbble"><span class="label">Dribbble</span></a></li>
+													<li><a href="#" class="icon fa-tumblr"><span class="label">Tumblr</span></a></li>
+												</ul>
+											</div>
+										</div>
+										<h5>Actions</h5>
+										<ul class="actions">
+											<li><a href="#" class="button special">Default</a></li>
+											<li><a href="#" class="button">Default</a></li>
+											<li><a href="#" class="button alt">Default</a></li>
+										</ul>
+										<ul class="actions small">
+											<li><a href="#" class="button special small">Small</a></li>
+											<li><a href="#" class="button small">Small</a></li>
+											<li><a href="#" class="button alt small">Small</a></li>
+										</ul>
+										<div class="row">
+											<div class="3u 6u(medium) 12u$(xsmall)">
+												<ul class="actions vertical">
+													<li><a href="#" class="button special">Default</a></li>
+													<li><a href="#" class="button">Default</a></li>
+													<li><a href="#" class="button alt">Default</a></li>
+												</ul>
+											</div>
+											<div class="3u 6u$(medium) 12u$(xsmall)">
+												<ul class="actions vertical small">
+													<li><a href="#" class="button special small">Small</a></li>
+													<li><a href="#" class="button small">Small</a></li>
+													<li><a href="#" class="button alt small">Small</a></li>
+												</ul>
+											</div>
+											<div class="3u 6u(medium) 12u$(xsmall)">
+												<ul class="actions vertical">
+													<li><a href="#" class="button special fit">Default</a></li>
+													<li><a href="#" class="button fit">Default</a></li>
+													<li><a href="#" class="button alt fit">Default</a></li>
+												</ul>
+											</div>
+											<div class="3u 6u$(medium) 12u$(xsmall)">
+												<ul class="actions vertical small">
+													<li><a href="#" class="button special small fit">Small</a></li>
+													<li><a href="#" class="button small fit">Small</a></li>
+													<li><a href="#" class="button alt small fit">Small</a></li>
+												</ul>
+											</div>
+										</div>
+									</section>
+
+									<section>
+										<h4>Table</h4>
+										<h5>Default</h5>
+										<div class="table-wrapper">
+											<table>
+												<thead>
+													<tr>
+														<th>Name</th>
+														<th>Description</th>
+														<th>Price</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td>Item One</td>
+														<td>Ante turpis integer aliquet porttitor.</td>
+														<td>29.99</td>
+													</tr>
+													<tr>
+														<td>Item Two</td>
+														<td>Vis ac commodo adipiscing arcu aliquet.</td>
+														<td>19.99</td>
+													</tr>
+													<tr>
+														<td>Item Three</td>
+														<td> Morbi faucibus arcu accumsan lorem.</td>
+														<td>29.99</td>
+													</tr>
+													<tr>
+														<td>Item Four</td>
+														<td>Vitae integer tempus condimentum.</td>
+														<td>19.99</td>
+													</tr>
+													<tr>
+														<td>Item Five</td>
+														<td>Ante turpis integer aliquet porttitor.</td>
+														<td>29.99</td>
+													</tr>
+												</tbody>
+												<tfoot>
+													<tr>
+														<td colspan="2"></td>
+														<td>100.00</td>
+													</tr>
+												</tfoot>
+											</table>
+										</div>
+
+										<h5>Alternate</h5>
+										<div class="table-wrapper">
+											<table class="alt">
+												<thead>
+													<tr>
+														<th>Name</th>
+														<th>Description</th>
+														<th>Price</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td>Item One</td>
+														<td>Ante turpis integer aliquet porttitor.</td>
+														<td>29.99</td>
+													</tr>
+													<tr>
+														<td>Item Two</td>
+														<td>Vis ac commodo adipiscing arcu aliquet.</td>
+														<td>19.99</td>
+													</tr>
+													<tr>
+														<td>Item Three</td>
+														<td> Morbi faucibus arcu accumsan lorem.</td>
+														<td>29.99</td>
+													</tr>
+													<tr>
+														<td>Item Four</td>
+														<td>Vitae integer tempus condimentum.</td>
+														<td>19.99</td>
+													</tr>
+													<tr>
+														<td>Item Five</td>
+														<td>Ante turpis integer aliquet porttitor.</td>
+														<td>29.99</td>
+													</tr>
+												</tbody>
+												<tfoot>
+													<tr>
+														<td colspan="2"></td>
+														<td>100.00</td>
+													</tr>
+												</tfoot>
+											</table>
+										</div>
+									</section>
+
+									<section>
+										<h4>Buttons</h4>
+										<ul class="actions">
+											<li><a href="#" class="button special">Special</a></li>
+											<li><a href="#" class="button">Default</a></li>
+											<li><a href="#" class="button alt">Alternate</a></li>
+										</ul>
+										<ul class="actions">
+											<li><a href="#" class="button special big">Big</a></li>
+											<li><a href="#" class="button">Default</a></li>
+											<li><a href="#" class="button alt small">Small</a></li>
+										</ul>
+										<ul class="actions fit">
+											<li><a href="#" class="button special fit">Fit</a></li>
+											<li><a href="#" class="button fit">Fit</a></li>
+											<li><a href="#" class="button alt fit">Fit</a></li>
+										</ul>
+										<ul class="actions fit small">
+											<li><a href="#" class="button special fit small">Fit + Small</a></li>
+											<li><a href="#" class="button fit small">Fit + Small</a></li>
+											<li><a href="#" class="button alt fit small">Fit + Small</a></li>
+										</ul>
+										<ul class="actions">
+											<li><a href="#" class="button special icon fa-download">Icon</a></li>
+											<li><a href="#" class="button icon fa-download">Icon</a></li>
+											<li><a href="#" class="button alt icon fa-check">Icon</a></li>
+										</ul>
+										<ul class="actions">
+											<li><span class="button special disabled">Special</span></li>
+											<li><span class="button disabled">Default</span></li>
+											<li><span class="button alt disabled">Alternate</span></li>
+										</ul>
+									</section>
+
+									<section>
+										<h4>Form</h4>
+										<form method="post" action="#">
+											<div class="row uniform">
+												<div class="6u 12u(xsmall)">
+													<input type="text" name="demo-name" id="demo-name" value="" placeholder="Name" />
+												</div>
+												<div class="6u 12u(xsmall)">
+													<input type="email" name="demo-email" id="demo-email" value="" placeholder="Email" />
+												</div>
+											</div>
+											<div class="row uniform">
+												<div class="12u">
+													<div class="select-wrapper">
+														<select name="demo-category" id="demo-category">
+															<option value="">- Category -</option>
+															<option value="1">Manufacturing</option>
+															<option value="1">Shipping</option>
+															<option value="1">Administration</option>
+															<option value="1">Human Resources</option>
+														</select>
+													</div>
+												</div>
+											</div>
+											<div class="row uniform">
+												<div class="4u 12u(medium)">
+													<input type="radio" id="demo-priority-low" name="demo-priority" checked>
+													<label for="demo-priority-low">Low Priority</label>
+												</div>
+												<div class="4u 12u(medium)">
+													<input type="radio" id="demo-priority-normal" name="demo-priority">
+													<label for="demo-priority-normal">Normal Priority</label>
+												</div>
+												<div class="4u 12u(medium)">
+													<input type="radio" id="demo-priority-high" name="demo-priority">
+													<label for="demo-priority-high">High Priority</label>
+												</div>
+											</div>
+											<div class="row uniform">
+												<div class="6u 12u(medium)">
+													<input type="checkbox" id="demo-copy" name="demo-copy">
+													<label for="demo-copy">Email me a copy of this message</label>
+												</div>
+												<div class="6u 12u(medium)">
+													<input type="checkbox" id="demo-human" name="demo-human" checked>
+													<label for="demo-human">I am a human and not a robot</label>
+												</div>
+											</div>
+											<div class="row uniform">
+												<div class="12u">
+													<textarea name="demo-message" id="demo-message" placeholder="Enter your message" rows="6"></textarea>
+												</div>
+											</div>
+											<div class="row uniform">
+												<div class="12u">
+													<ul class="actions">
+														<li><input type="submit" value="Send Message" /></li>
+														<li><input type="reset" value="Reset" class="alt" /></li>
+													</ul>
+												</div>
+											</div>
+										</form>
+									</section>
+
+									<section>
+										<h4>Image</h4>
+										<h5>Fit</h5>
+										<span class="image fit"><img src="images/banner_small.jpg" alt="" /></span>
+										<div class="box alt">
+											<div class="row 50% uniform">
+												<div class="4u"><span class="image fit"><img src="images/pic01.jpg" alt="" /></span></div>
+												<div class="4u"><span class="image fit"><img src="images/pic02.jpg" alt="" /></span></div>
+												<div class="4u"><span class="image fit"><img src="images/pic03.jpg" alt="" /></span></div>
+											</div>
+											<div class="row 50% uniform">
+												<div class="4u"><span class="image fit"><img src="images/pic02.jpg" alt="" /></span></div>
+												<div class="4u"><span class="image fit"><img src="images/pic03.jpg" alt="" /></span></div>
+												<div class="4u"><span class="image fit"><img src="images/pic01.jpg" alt="" /></span></div>
+											</div>
+											<div class="row 50% uniform">
+												<div class="4u"><span class="image fit"><img src="images/pic03.jpg" alt="" /></span></div>
+												<div class="4u"><span class="image fit"><img src="images/pic01.jpg" alt="" /></span></div>
+												<div class="4u"><span class="image fit"><img src="images/pic02.jpg" alt="" /></span></div>
+											</div>
+										</div>
+										<h5>Left &amp; Right</h5>
+										<p><span class="image left"><img src="images/avatar.jpg" alt="" /></span>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent.</p>
+										<p><span class="image right"><img src="images/avatar.jpg" alt="" /></span>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent.</p>
+									</section>
+
+								</div>
+							</section>
+						-->
+
+					</div>
+
+				<!-- Footer -->
+					<section id="footer">
+						<div class="container">
+							<ul class="copyright">
+								<li>&copy; Kirk Barnett. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+							</ul>
+						</div>
+					</section>
+
+			</div>
+
+	</body>
+</html>
