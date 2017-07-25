@@ -1,1 +1,0 @@
-# BarnettKirk.github.io
